@@ -1,0 +1,30 @@
+.sub-title {
+    display: block;
+
+    @include line-height(22.05);
+    font-weight: 800;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: $accent;
+
+    &:before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 72px;
+        height: 2px;
+        margin-right: 32px;
+        margin-bottom: 3px;
+
+        background: $accent;
+
+        @media (max-width: 420px) {
+            width: 32px;
+            margin-right: 10px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        font-size: 14px;
+    }
+}

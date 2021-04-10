@@ -1,0 +1,22 @@
+.account {
+    display: block;
+    text-align: center;
+    font-size: 17px;
+    @include line-height(20.55, 17);
+
+    transition: color .15s linear;
+
+    &__text {
+        padding-left: 8px;
+    }
+
+    &:hover {
+        color: $accent;
+    }
+
+    @media (max-width: 820px) {
+        width: 100%;
+        font-size: 39px;
+        padding: 30px 0;
+    }
+}

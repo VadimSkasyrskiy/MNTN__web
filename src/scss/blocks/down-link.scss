@@ -1,0 +1,21 @@
+.down-link {
+    font-weight: 700;
+    @include line-height(2.76);
+
+    transition: color .15s linear;
+
+    &:after {
+        content: '\f175';
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 16px;
+
+        font-size: 25px;
+        font-family: 'Font Awesome 5 Pro';
+        font-weight: 300;
+    }
+
+    &:hover {
+        color: $accent;
+    }
+}

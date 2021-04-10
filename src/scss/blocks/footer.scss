@@ -1,0 +1,134 @@
+.main-footer {
+    // .main-footer__inner
+
+    &__inner {
+        padding: 200px 150px 120px;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 1375px) {
+            padding: 200px 50px 120px;
+        }
+
+        @media (max-width: 1180px) {
+            flex-direction: column;
+        }
+
+        @media (max-width: 580px) {
+            padding: 200px 0 120px;
+        }
+    }
+
+    // .main-footer__left
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: 1180px) {
+            order: 1;
+        }
+
+        @media (max-width: 580px) {
+            text-align: center;
+        }
+    }
+
+    // .main-footer__descr
+
+    &__descr {
+        max-width: 303px;
+        margin-top: 24px;
+        margin-bottom: 30px;
+
+        @include line-height(32);
+        font-weight: 700;
+
+        @media (max-width: 580px) {
+            margin: 40px auto;
+        }
+    }
+
+    // .main-footer__copy
+
+    &__copy {
+        margin-top: auto;
+
+        @include line-height(32);
+        font-weight: 500;
+        opacity: .5;
+    }
+
+    // .main-footer__nav
+
+    &__nav {
+        display: flex;
+
+        @media (max-width: 1180px) {
+            margin-bottom: 80px;
+        }
+
+        @media (max-width: 1000px) {
+            justify-content: space-between;
+        }
+
+        @media (max-width: 580px) {
+            display: block;
+        }
+    }
+
+    // .main-footer__item
+
+    &__item {
+        margin-right: 212px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @media (max-width: 1000px) {
+            margin-right: 0;
+        }
+
+        @media (max-width: 580px) {
+            margin-bottom: 60px;
+            text-align: center;
+            
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    // .main-footer__title
+
+    &__title {
+        margin-bottom: 24px;
+
+        font-size: 24px;
+        font-weight: 700;
+        @include line-height(32, 24);
+        color: $accent;
+    }
+
+    &__list-item {
+        margin-bottom: 16px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    // .main-footer__link
+
+    &__link {
+        display: block;
+
+        @include line-height(32);
+        font-weight: 500;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

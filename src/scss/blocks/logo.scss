@@ -1,0 +1,11 @@
+.logo {
+    display: inline-block;
+
+    fill: $white;
+
+    transition: fill .15s linear;
+    
+    &:hover {
+        fill: $accent;
+    }
+}

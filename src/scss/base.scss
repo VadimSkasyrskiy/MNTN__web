@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: $serif, Arial, sans-serif;
+    font-size: 18px;
+    background: $dark;
+    color: $white;
+}
+
+h1, h2, h3, h4, h5, h6, ul, li, p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+}
+
+button {
+    padding: 0;
+
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.wrapper {
+    max-width: 1920px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+}

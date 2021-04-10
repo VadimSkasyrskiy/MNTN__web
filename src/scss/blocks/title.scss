@@ -1,0 +1,23 @@
+.title {
+    font-family: $display;
+    font-weight: 600;
+    @include line-height(100, 88);
+
+    &--main {
+        font-size: 88px;
+        text-transform: capitalize;
+
+        @media (max-width: 991px) {
+            font-size: 62px;
+        }
+
+        @media (max-width: 510px) {
+            font-size: 48px;
+        }
+    }
+
+    &--section {
+        font-size: 64px;
+        @include line-height(76, 64);
+    }
+}

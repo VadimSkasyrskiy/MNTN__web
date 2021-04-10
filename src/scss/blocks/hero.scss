@@ -1,0 +1,124 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    min-height: 900px;
+    max-height: 1400px;
+    padding-top: 64px;
+
+    &__content {
+        padding-top: 150px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        @media (max-width: 830px) {
+            padding-top: 110px;
+        }
+    }
+
+    &__text {
+        margin: 0 auto;
+        max-width: 950px;
+    }
+
+    &__title {
+        margin-bottom: 42px;
+    }
+
+    &__sub-title {
+        margin-bottom: 25px;
+    }
+
+    &__follow {
+        -webkit-writing-mode: vertical-rl; 
+        writing-mode: tb-rl;
+
+        &-text { 
+            font-weight: 700;
+            @include line-height(21.76);
+        }
+
+        &-text, &-link { 
+            display: inline-block;
+            margin-bottom: 24px;
+        }
+
+        &-link {
+
+            font-size: 25px;
+            transition: color .15s linear;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &:hover {
+                color: $accent;
+            }
+        }
+
+        @media (max-width: 1220px) {
+            display: none;
+        }
+    }
+
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: -200px;
+        background: linear-gradient(135deg, #0b1d26, transparent 87%);
+        opacity: .6;
+        z-index: -2;
+    }
+}
+
+.layer {
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    &--1 {
+        top: 66%;
+        left: 0%;
+        z-index: -2;
+
+        @media (max-width: 830px) {
+            height: 600px;
+            object-position: 50% 0%;
+        }
+    }
+
+    &--2 {
+        top: 40%;
+        left: 0%;
+        z-index: -3;
+
+        @media (max-width: 830px) {
+            height: 600px;
+        }
+    }
+
+    &--3 {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -4;
+
+        @media (max-width: 830px) {
+            height: 800px;
+        }
+    }
+
+    &--shadow {
+        display: none;
+        height: 700px;
+        top: 90%;
+        background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%);
+    }   
+}

@@ -1,0 +1,28 @@
+// utils
+@import 'utils/vars';
+@import 'utils/mixins';
+@import 'utils/functions';
+
+// fonts
+@import 'fonts';
+@import 'vendor/fontawesome/fontawesome';
+
+// base
+@import 'base';
+
+// blocks
+@import 'blocks/container';
+@import 'blocks/logo';
+@import 'blocks/main-header';
+@import 'blocks/main-menu';
+@import 'blocks/hero';
+@import 'blocks/account';
+@import 'blocks/title';
+@import 'blocks/sub-title';
+@import 'blocks/down-link';
+@import 'blocks/content';
+@import 'blocks/footer';
+
+// libs
+@import 'lib';
+

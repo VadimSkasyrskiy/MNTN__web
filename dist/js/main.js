@@ -1,0 +1,1 @@
+$((function(){$(".down-link").on("click",(function(n){$("html,body").stop().animate({scrollTop:$("#content-items").offset().top},900),n.preventDefault()})),$(".main-menu__icon").on("click",(function(){$(".main-header__nav").toggleClass("active")}))}));

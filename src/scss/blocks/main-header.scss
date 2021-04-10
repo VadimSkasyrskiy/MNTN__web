@@ -1,0 +1,45 @@
+.main-header {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+
+        flex-grow: 1;
+
+        @media (max-width: 820px) {
+            visibility: hidden;
+            flex-direction: column;
+            justify-content: center;
+            z-index: 999;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+
+            overflow: auto;
+            background: rgba(#000, .9);
+        }
+
+        &.active {
+            visibility: visible;
+
+            + .main-menu__icon span {
+                background: $accent;
+            }
+
+            + .main-menu__icon {
+                position: fixed;
+                right: 15px;
+            }
+        }
+    }
+
+    &__menu {
+        margin: 0 auto;
+    }
+}
